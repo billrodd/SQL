@@ -1,0 +1,44 @@
+/**Rodds;
+Gloves (4)
+Bats (10)
+Baseballs (50)
+Pants (30)
+Shirts (45)
+Bases (3)
+Home Plate (1)
+Helmets (4)
+Basketballs (5)
+Footballs (6)
+Cleats (10)
+Wood Bats (9)
+Golf Clubs (14)
+Golf Balls (100)
+Putters (20)
+**/
+
+CREATE TABLE rodds (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, cost REAL, aisle INTEGER);
+
+INSERT INTO rodds VALUES (1, "Gloves", 4, "$100", 1);
+INSERT INTO rodds VALUES (2, "Bats", 10, "$300", 6);
+INSERT INTO rodds VALUES (3, "Baseballs", 50, "$5", 2);
+INSERT INTO rodds VALUES (4, "Pants", 30, "$40", 5);
+INSERT INTO rodds VALUES (6, "Bases", 3, "$5", 4);
+INSERT INTO rodds VALUES (7, "Home Plate", 1, "$10", 4);
+INSERT INTO rodds VALUES (8, "Helmets", 4, "$25", 9);
+INSERT INTO rodds VALUES (9, "Basketballs", 5, "$60", 10);
+INSERT INTO rodds VALUES (10, "Footballs", 6, "$55", 8);
+INSERT INTO rodds VALUES (11, "Cleats", 10, "$150", 4);
+INSERT INTO rodds VALUES (12, "Wood Bats", 9, "$35", 5);
+INSERT INTO rodds VALUES (13, "Golf Clubs", 14, "$400", 9);
+INSERT INTO rodds VALUES (14, "Golf Balls", 100, "$2", 9);
+INSERT INTO rodds VALUES (15, "Putters", 20, "$100", 10);
+
+SELECT * FROM rodds; 
+SELECT aisle, SUM (quantity) FROM rodds GROUP BY aisle;
+
+
+
+
+
+
+
